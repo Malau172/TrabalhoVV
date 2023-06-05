@@ -1,4 +1,4 @@
-const Produto = require('./Entity/product');
+const Produto = require('./Entidade/produto');
 const VendaService = require('./Services/vendaService');
 
 const produto1 = new Produto(1, 'Camisa', 29.99, 2);
