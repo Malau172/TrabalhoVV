@@ -1,8 +1,6 @@
-const Produto  = require('../Entity/product');
-
-class VendaService {
+// eslint-disable-next-line no-unused-vars
+class ProductService{
   constructor() {
-   
     this.produtos = [];
   }
 
@@ -10,14 +8,20 @@ class VendaService {
     this.produtos.push(produto);
   }
 
-  calcularValorTotal() {
-    let valorTotal = 0;
-    this.produtos.forEach(produto => {
-      valorTotal += produto.calcularValorTotal();
-    });
-    return valorTotal;
+  buscarProdutoPorId(id) {
+    return this.produtos.find(produto => produto.id === id);
   }
 
-}
+  listarProdutos() {
+    return this.produtos;
+  }
 
-module.exports = VendaService;
+  editarProduto(id, novoProduto) {
+    const index = this.produtos.findIndex(produto => produto.id === id);
+    if (index !== -1) {
+      this.produtos[index] = novoProduto;
+      return true; 
+    }
+    return false; 
+  }
+}
