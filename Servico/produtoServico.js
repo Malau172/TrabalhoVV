@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-class ProductService{
+class ProdutoServico{
   constructor() {
     this.produtos = [];
   }
@@ -25,3 +25,5 @@ class ProductService{
     return false; 
   }
 }
+
+module.exports = ProdutoServico;
