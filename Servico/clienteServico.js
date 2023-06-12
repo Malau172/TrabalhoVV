@@ -1,4 +1,4 @@
-class ClienteService {
+class ClienteServico {
   constructor() {
     this.clientes = [];
   }
@@ -34,4 +34,4 @@ class ClienteService {
   }
 }
 
-module.exports = ClienteService;
+module.exports = ClienteServico;

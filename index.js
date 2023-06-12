@@ -1,5 +1,5 @@
 const Produto = require('./Entidade/produto');
-const VendaService = require('./Services/vendaService');
+const VendaService = require('./Servico/vendaService');
 
 const produto1 = new Produto(1, 'Camisa', 29.99, 2);
 const produto2 = new Produto(2, 'Calça', 59.99, 1);

@@ -1,4 +1,4 @@
-class PedidoService {
+class PedidoServico {
   constructor() {
     this.pedidos = [];
   }
@@ -34,4 +34,4 @@ class PedidoService {
   }
 }
 
-module.exports = PedidoService;
+module.exports = PedidoServico;
