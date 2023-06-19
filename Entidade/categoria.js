@@ -18,5 +18,4 @@ class Categoria {
     return this.cor;
   }
 }
-
-export default Categoria;
+module.exports =  Categoria;

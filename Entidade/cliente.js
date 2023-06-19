@@ -19,4 +19,4 @@ class Cliente {
   }
 }
 
-export default Cliente;
+module.exports = Cliente

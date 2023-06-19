@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 const { expect } = require('chai');
-const Cliente = require('../entidade/Cliente');
+const Cliente = require('../Entidade/cliente')
 
 describe('Cliente', () => {
   let cliente;

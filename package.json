@@ -1,12 +1,11 @@
-
-
 {
   "name": "trabalhovv",
   "version": "1.0.0",
   "description": "trabalho",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -25,10 +24,5 @@
     "chai": "^4.3.7",
     "eslint": "^8.42.0",
     "mocha": "^10.2.0"
-  },
-  "scripts": {
-    "test": "mocha",
-    "lint": "eslint ."
   }
-  
 }

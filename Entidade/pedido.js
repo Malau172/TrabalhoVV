@@ -4,15 +4,20 @@ class Pedido {
     this.cliente = cliente;
     this.produtos = produtos;
     this.data = data;
-    this.total = total;
+    this.total = this.calcularValorTotal(); // Definindo o valor total ao inicializar o pedido
   }
 
   adicionarProduto(produto) {
     this.produtos.push(produto);
+    this.total += produto.calcularValorTotal(); // Atualizando o valor total ao adicionar um produto
   }
 
   removerProduto(id) {
-    this.produtos = this.produtos.filter(produto => produto.id !== id);
+    const index = this.produtos.findIndex(produto => produto.id === id);
+    if (index !== -1) {
+      const produtoRemovido = this.produtos.splice(index, 1)[0];
+      this.total -= produtoRemovido.calcularValorTotal(); // Atualizando o valor total ao remover um produto
+    }
   }
 
   calcularValorTotal() {
@@ -32,4 +37,4 @@ class Pedido {
   }
 }
 
-export default Pedido;
+module.exports = Pedido;

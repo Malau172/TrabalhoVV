@@ -29,4 +29,4 @@ class Endereco {
   }
 }
 
-export default Endereco;
+module.exports =  Endereco;
