@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 const chai = require('chai');
 const expect = chai.expect;
-const Produto = require('../entidade/produto');
+const Produto = require('../Entidade/produto');
 
 
 describe('Produto', () => {

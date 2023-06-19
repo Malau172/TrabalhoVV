@@ -1,6 +1,6 @@
 const { expect } = require('chai');
-const Produto = require('../Entidade/Produto');
-const ProdutoServico = require('../Servico/ProdutoServico');
+const Produto = require('../Entidade/produto');
+const ProdutoServico = require('../Servico/produtoServico');
 
 describe('ProdutoServico', () => {
   var  produtoServico;

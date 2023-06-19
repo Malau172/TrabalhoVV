@@ -1,6 +1,6 @@
 const { expect } = require('chai');
-const Cliente = require('../Entidade/Cliente');
-const ClienteServico = require('../Servico/ClienteServico');
+const Cliente = require('../Entidade/cliente')
+const ClienteServico = require('../Servico/clienteServico');
 
 describe('ClienteServico', () => {
   var clienteServicoClienteServico;
